@@ -1,3 +1,25 @@
+/* Hide bullet points for participants list */
+.participants-list.no-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #c00;
+  margin-left: 0.5em;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #f00;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -141,4 +163,33 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+.participants-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.participants-section h5 {
+  color: #1a237e;
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.participants-list {
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+.participants-list li {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+
+.no-participants {
+  color: #999;
+  font-style: italic;
+  font-size: 0.9em;
 }
